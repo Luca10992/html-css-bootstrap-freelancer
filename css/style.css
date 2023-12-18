@@ -1,7 +1,7 @@
 /* CUSTOM PROP */
 
 :root {
-    --header-color: #2C3E50;
+    --header-color: #3A546D;
     --primary-color: #1ABC9C;
     --footer-color: #2C3E50;
     --bar-color: #888888;
@@ -34,5 +34,100 @@
     list-style-type: none;
     margin-top: revert;
 }
+
+/* MAIN */
+
+section:nth-child(odd) {
+    background-color: var(--primary-color);
+    min-height: 200px;
+}
+
+section:nth-child(even) {
+    color: var(--header-color);
+}
+
+section .container-xl {
+    padding: 3rem 0;
+}
+
+/* SECTION1 */
+
+.logo {
+    min-width: 15rem;
+    width: 15rem;
+}
+
+.line {
+    width: 17%;
+    height: 5px;
+    border-radius: 25px;
+    background-color: white;
+}
+
+/* SECTION 2 */
+
+#section_2 h2 {
+    color: var(--header-color)
+}
+
+.text-footer {
+    color: var(--footer-color);
+}
+
+.line-footer {
+    background-color: var(--footer-color);
+}
+
+.col {
+    height: 300px;
+    border-radius: 10px;
+
+    background-color: aquamarine;
+}
+
+/* SECTION 3 */
+
+/* SECTION 4 */
+
+#section_4 * {
+    color: var(--header-color);
+}
+
+#section_4 .line {
+    background-color: var(--footer-color);
+}
+
+#section_4 .container-xl {
+    padding: 0 7rem;
+}
+
+#section_4 .message {
+    padding-bottom: 8rem;
+}
+
+#section_4 .btn {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* SECTION 5 */
+
+#section_5 {
+    background-color: var(--header-color);
+}
+
+/* FOOTER */
+
+#footer {
+    height: 80px;
+    background-color: var(--footer-color);
+}
+
+#footer p {
+    font-size: 12px;
+    line-height: 80px;
+}
+
+
 
 
