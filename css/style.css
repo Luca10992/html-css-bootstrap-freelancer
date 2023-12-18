@@ -1,0 +1,38 @@
+/* CUSTOM PROP */
+
+:root {
+    --header-color: #2C3E50;
+    --primary-color: #1ABC9C;
+    --footer-color: #2C3E50;
+    --bar-color: #888888;
+}
+
+* {
+    color: white;
+}
+
+/* HEADER */
+
+#header {
+    background-color: var(--header-color);
+    height: 80px;
+}
+
+.container-xl {
+    max-width: 1080px;
+}
+
+.header_container {
+    height: 100%;
+}
+
+.header_container i {
+    color: var(--bar-color);
+}
+
+.list_container ul {
+    list-style-type: none;
+    margin-top: revert;
+}
+
+
