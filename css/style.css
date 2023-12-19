@@ -14,25 +14,23 @@
 /* HEADER */
 
 #header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
     background-color: var(--header-color);
-    height: 80px;
+    min-height: 80px;
 }
 
 .container-xl {
     max-width: 1080px;
 }
 
-.header_container {
+.navbar {
     height: 100%;
 }
 
-.header_container i {
-    color: var(--bar-color);
-}
-
-.list_container ul {
-    list-style-type: none;
-    margin-top: revert;
+.container-fluid {
+    max-width: 1080px;
 }
 
 /* MAIN */
@@ -48,6 +46,10 @@ section:nth-child(even) {
 
 section .container-xl {
     padding: 3rem 0;
+}
+
+.card {
+    background-color: transparent;
 }
 
 /* SECTION1 */
@@ -67,7 +69,7 @@ section .container-xl {
 /* SECTION 2 */
 
 #section_2 h2 {
-    color: var(--header-color)
+    color: var(--footer-color)
 }
 
 .text-footer {
@@ -78,19 +80,20 @@ section .container-xl {
     background-color: var(--footer-color);
 }
 
-.col {
-    height: 300px;
-    border-radius: 10px;
+/* SECTION 3 */
 
-    background-color: aquamarine;
+.download:hover .fa-download {
+    color: var(--primary-color);
 }
 
-/* SECTION 3 */
+.download:hover {
+    color: var(--primary-color);
+}
 
 /* SECTION 4 */
 
 #section_4 * {
-    color: var(--header-color);
+    color: var(--footer-color);
 }
 
 #section_4 .line {
@@ -110,10 +113,34 @@ section .container-xl {
     color: white;
 }
 
+#section_4 .btn {
+    background-color: var(--primary-color);
+}
+
 /* SECTION 5 */
 
 #section_5 {
     background-color: var(--header-color);
+}
+
+.social {
+    margin: 0 0.5rem;
+    width: 50px;
+    aspect-ratio: 1;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.social:hover .icon,
+.social:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.link-bootstrap {
+    color: var(--primary-color);
+    text-decoration: none;
 }
 
 /* FOOTER */
